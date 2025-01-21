@@ -1,5 +1,10 @@
+const data = null;
+const foto = document.getElementById("foto")
 
-document.getElementById("button").addEventListener("click", function () {
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+document.getElementById("btn btn-header").addEventListener("click", function () {
     const xhr = new XMLHttpRequest();
 
     xhr.addEventListener('readystatechange', function () {
@@ -15,7 +20,7 @@ document.getElementById("button").addEventListener("click", function () {
     xhr.send();
 })
 
-document.getElementById("tots").addEventListener("click", function () {
+document.getElementById("ver-todos").addEventListener("click", function () {
     const xhr = new XMLHttpRequest();
 
     xhr.addEventListener('readystatechange', function () {
